@@ -117,6 +117,7 @@ a{
     box-shadow:inset -2px -1px 11px 0px #265a51, 4px 3px 10px 0px #4caf50;
     position: relative;
     z-index: 11111111111 ;
+    overflow: hidden;
 }
 .first-left button::after{
     z-index: 1;
@@ -126,7 +127,7 @@ a{
     left: 0;
     height: 0;
     width: 100%;
-    transition: 2.1s;
+    transition: 1.1s;
     background-color:#fff ;
 
 }
@@ -134,7 +135,25 @@ a{
     border-radius: 30px;
     z-index: -2;
     height: 100%;
-    transition: 2.1s;
+    transition: 1.1s;
+}
+.first-left button::before{
+    z-index: 1;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    transition: 1.1s;
+    background-color:#fff ;
+
+}
+.first-left button:hover::before{
+    border-radius: 30px;
+    z-index: -2;
+    height: 100%;
+    transition: 1.1s;
 }
 .second-all{
     padding: 0 5rem;
@@ -305,7 +324,13 @@ a{
 }
 .fourth-4 img{
     width: 100%;
-    border-radius: 15px;  
+    border-radius: 15px;
+    cursor: pointer;  
+    transition: 1s;
+}
+.fourth-4 img:hover{
+    transition: 1s;
+    transform: scale(1.1);
 }
 .fourth-bottom i{
     color: #E2BB53;
@@ -322,6 +347,19 @@ a{
     cursor: pointer;
     background-color: #E2BB53;
     transition: 2s;
+}
+.b-all{
+    position: relative;
+    overflow: hidden;
+}
+.b-h6{
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    border:1px solid red;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: red;
 }
 
 
